@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>akadance.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+.s4 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+akadance.py</font>
+</center></td></tr></table>
+<pre><span class="s0">r </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Insira o valor do raio da esfera para calcular o volume:'</span><span class="s1">))</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'A operação seguirá a seguinte fórmula: 4/3 X π X raio³'</span><span class="s1">)</span>
+<span class="s0">vo </span><span class="s1">= </span><span class="s3">4</span><span class="s1">/</span><span class="s3">3 </span><span class="s1">* </span><span class="s3">3.14 </span><span class="s1">* </span><span class="s0">r</span><span class="s1">**</span><span class="s3">3</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">f'O volume da esfera é igual a:</span><span class="s4">{</span><span class="s0">vo</span><span class="s4">:</span><span class="s2">.4f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'Para calcular a quantidade de água que uma pessoa precisa beber para se manter hidratada, é necessário multiplicar o peso em Kg por 0,03'</span><span class="s1">)</span>
+<span class="s0">p </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Insira a massa em Kg do indivíduo:'</span><span class="s1">))</span>
+<span class="s0">a </span><span class="s1">= </span><span class="s0">p </span><span class="s1">* </span><span class="s3">0.03</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">f'A quantidade de água em litros necessária para a pessoa se manter hidratada é igual a:</span><span class="s4">{</span><span class="s0">a</span><span class="s4">:</span><span class="s2">.3f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+<span class="s4">import </span><span class="s0">math</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">'Insira os valores dos pontos P (x1,y1) e Q (x2,y2) abaixo:'</span><span class="s1">)</span>
+<span class="s0">x1 </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite a coordenada x1: '</span><span class="s1">))</span>
+<span class="s0">y1 </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite a coordenada y1: '</span><span class="s1">))</span>
+<span class="s0">x2 </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite a coordenada x2: '</span><span class="s1">))</span>
+<span class="s0">y2 </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite a coordenada y2: '</span><span class="s1">))</span>
+<span class="s0">x </span><span class="s1">= (</span><span class="s0">x2 </span><span class="s1">- </span><span class="s0">x1</span><span class="s1">)**</span><span class="s3">2</span>
+<span class="s0">y </span><span class="s1">= (</span><span class="s0">y2 </span><span class="s1">- </span><span class="s0">y1</span><span class="s1">)**</span><span class="s3">2</span>
+<span class="s0">d </span><span class="s1">= </span><span class="s0">math</span><span class="s1">.</span><span class="s0">sqrt</span><span class="s1">(</span><span class="s0">x </span><span class="s1">+ </span><span class="s0">y</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s2">f'A distância entre os pontos P(</span><span class="s4">{</span><span class="s0">x1</span><span class="s4">}</span><span class="s2">, </span><span class="s4">{</span><span class="s0">y1</span><span class="s4">}</span><span class="s2">) e Q(</span><span class="s4">{</span><span class="s0">x2</span><span class="s4">}</span><span class="s2">, </span><span class="s4">{</span><span class="s0">y2</span><span class="s4">}</span><span class="s2">) é: </span><span class="s4">{</span><span class="s0">d</span><span class="s4">:</span><span class="s2">.2f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+<span class="s0">x </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite o primeiro valor inteiro: '</span><span class="s1">))</span>
+<span class="s0">y </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Digite o segundo valor inteiro: '</span><span class="s1">))</span>
+<span class="s4">if </span><span class="s0">x </span><span class="s1">&lt; </span><span class="s0">y</span><span class="s1">:</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'Os valores em ordem crescente são: </span><span class="s4">{</span><span class="s0">x</span><span class="s4">}</span><span class="s2">, </span><span class="s4">{</span><span class="s0">y</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s4">else</span><span class="s1">:</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'Os valores em ordem crescente são: </span><span class="s4">{</span><span class="s0">y</span><span class="s4">}</span><span class="s2">, </span><span class="s4">{</span><span class="s0">x</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+
+<span class="s0">x </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Insira a altura do indíviduo em metros'</span><span class="s1">))</span>
+<span class="s0">y </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'A pessoa é um homem ou uma mulher?'</span><span class="s1">))</span>
+<span class="s4">if  </span><span class="s0">y </span><span class="s1">== </span><span class="s0">homem</span><span class="s1">:</span>
+    <span class="s0">p </span><span class="s1">= (</span><span class="s3">72.7 </span><span class="s1">* </span><span class="s0">x</span><span class="s1">) - </span><span class="s3">58</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'O peso ideal para o homem é:</span><span class="s4">{</span><span class="s0">p</span><span class="s4">:</span><span class="s2">.2f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s4">else</span><span class="s1">:</span>
+    <span class="s0">m </span><span class="s1">= (</span><span class="s3">62.1 </span><span class="s1">* </span><span class="s0">x</span><span class="s1">) - </span><span class="s3">44.7</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'O peso ideal para a mulher é:</span><span class="s4">{</span><span class="s0">m</span><span class="s4">:</span><span class="s2">.2f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+<span class="s0">x </span><span class="s1">= </span><span class="s0">float</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'Insira a altura do indivíduo em metros:'</span><span class="s1">))</span>
+<span class="s0">y </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">'A pessoa é um homem (1) ou uma mulher (2)?'</span><span class="s1">))</span>
+
+<span class="s4">if </span><span class="s0">y </span><span class="s1">== </span><span class="s3">1</span><span class="s1">:</span>
+    <span class="s0">p </span><span class="s1">= (</span><span class="s3">72.7 </span><span class="s1">* </span><span class="s0">x</span><span class="s1">) - </span><span class="s3">58</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'O peso ideal para o homem é: </span><span class="s4">{</span><span class="s0">p</span><span class="s4">:</span><span class="s2">.2f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s4">else</span><span class="s1">:</span>
+    <span class="s0">m </span><span class="s1">= (</span><span class="s3">62.1 </span><span class="s1">* </span><span class="s0">x</span><span class="s1">) - </span><span class="s3">44.7</span>
+    <span class="s0">print</span><span class="s1">(</span><span class="s2">f'O peso ideal para a mulher é: </span><span class="s4">{</span><span class="s0">m</span><span class="s4">:</span><span class="s2">.2f</span><span class="s4">}</span><span class="s2">'</span><span class="s1">)</span>
+
+</pre>
+</body>
+</html>
